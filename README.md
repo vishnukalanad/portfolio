@@ -1,2 +1,0 @@
-# portfolio
-Developer portfolio
