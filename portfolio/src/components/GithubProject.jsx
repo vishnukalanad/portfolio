@@ -45,6 +45,10 @@ const STACKS = {
 
 
 export default function GithubProject({ project }) {
+    function openLinksWithNewTab(url) {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+        if (newWindow) newWindow.opener = null;
+    }
     return<div className="bg-slate-100 p-2 rounded-lg" key={project.name}>
         <div className="flex items-center gap-2">
             <div
@@ -71,7 +75,9 @@ export default function GithubProject({ project }) {
                 {/*   rel="noreferrer">Open repo</a>*/}
             </div>
 
-            <Button hover="hover:bg-emerald-200 hover:text-emerald-900" className={`transition duration-200 ml-auto`}>
+            <Button hover="hover:bg-emerald-200 hover:text-emerald-900" className={`transition duration-200 ml-auto`} onClick={() => {
+                openLinksWithNewTab(project.repo)
+            }}>
                 <BsArrowUpRightCircleFill className="lg"/>
             </Button>
         </div>

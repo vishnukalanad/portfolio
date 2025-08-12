@@ -10,7 +10,7 @@ export default function JobRole({role, date, summary}) {
         <p className="text-xs mt-1 text-slate-500">{date}</p>
         {
             summary.map((project, index) => {
-                return <ProjectDetails className={"mt-3"} index={index} complete={project} title={project.name} description={project.description} clients={project.clients} stack={project.stack} keyPoints={project.keyPoints} key={index}/>
+                return <ProjectDetails className={"mt-3 duration-100 hover:bg-slate-50 rounded-xl"} index={index} complete={project} title={project.name} description={project.description} clients={project.clients} stack={project.stack} keyPoints={project.keyPoints} key={index}/>
             })
         }
     </li>

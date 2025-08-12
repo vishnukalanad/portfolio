@@ -6,7 +6,7 @@ export const PERSONAL_DETAILS = [
     },
     {
         title: "Native",
-        value: "Indian",
+        value: "🇮🇳 Indian",
         sup: null
     },
     {
