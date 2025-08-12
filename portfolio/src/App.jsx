@@ -7,7 +7,7 @@ import Modal from "./components/Modal.jsx";
 import ProjectDetailsModalLayout from "./components/ProjectDetailsModalLayout.jsx";
 import {MODAL_TYPES} from "./store/user.js";
 import Skills from "./components/Skills.jsx";
-import GsapScrollLine from "./components/GsapScrollLine.jsx";
+import { Analytics } from "@vercel/analytics/react"
 import GithubProjects from "./components/GithubProjects.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -35,6 +35,7 @@ function App() {
                 <GithubProjects/>
                 <Footer/>
             </div>
+            <Analytics />
         </main>
     )
 }
