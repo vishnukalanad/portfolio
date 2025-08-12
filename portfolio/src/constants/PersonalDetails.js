@@ -11,7 +11,7 @@ export const PERSONAL_DETAILS = [
     },
     {
         title: "Languages",
-        value: "English, Malayalam, Arabic",
+        value: "English, മലയാളം, Arabic",
         sup: null
     },
     {

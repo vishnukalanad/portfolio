@@ -1,7 +1,7 @@
 import Card from "./Card.jsx";
 import profilePic from "../assets/me.jpg"
 import CurrentLocation from "./Location.jsx";
-import {PERSONAL_DETAILS} from "../PersonalDetails.js";
+import {PERSONAL_DETAILS} from "../constants/PersonalDetails.js";
 import DataCard from "./DataCard.jsx";
 
 export default function Flyer() {

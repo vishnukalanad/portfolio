@@ -1,33 +1,26 @@
 import Card from "./Card.jsx";
 import { BsClockFill } from "react-icons/bs";
 import ProjectDetails from "./ProjectDetails.jsx";
-import {ProjectsData} from "../ProjectsData.js";
+import {InternRoleSummary, JuniorRoleSummary, SeniorRoleSummary} from "../constants/ProfessionalSummary.js";
+import JobRole from "./JobRole.jsx";
 
 export default function Projects() {
     return<div className="container mx-auto px-4 pt-4 w-full flex justify-between">
-        <Card p={"p-3 px-4"}>
-            <ol className="relative border-s-2 border-slate-200 m-3">
-                <li className="mb-10 ms-6">
-                    <span className="absolute flex items-center justify-center w-6 h-6 bg-emerald-100 rounded-full -start-3 ring-8 ring-white">
-                        <BsClockFill className="text-emerald-700 p-0.5" />
-                    </span>
-                    <h2 className="font-normal text-emerald-800">Senior Software Engineer</h2>
-                    <p className="text-xs mt-1 text-slate-500"> July 2024 - August 2025</p>
-                    {
-                        ProjectsData.map((project, index) => {
-                            return <ProjectDetails className={"mt-3"} index={index} title={project.name} description={project.description} clients={project.clients} stack={project.stack} keyPoints={project.keyPoints} key={index}/>
-                        })
-                    }
-                </li>
+        <Card p={"p-3 px-4"} flex="_">
+            <p className="text-emerald-800 font-medium">Professional Summary</p>
+            <ol className="relative md:border-s-2 md:border-slate-200 mt-3 md:m-3">
+                {/*Senior role*/}
+                <JobRole role={"Senior Software Engineer"} date={"July 2024 - August 2025"} summary={SeniorRoleSummary}/>
 
-                <li className="mb-10 ms-6">
-                    <span className="absolute flex items-center justify-center w-6 h-6 bg-emerald-100 rounded-full -start-3 ring-8 ring-white">
-                        <BsClockFill className="text-emerald-700 p-0.5" />
-                    </span>
-                    <h2 className="font-normal text-emerald-800">Software Engineer</h2>
-                    <p className="text-xs mt-1 text-slate-500"> April 2022 - July 2024</p>
-                </li>
+                {/*Junior Role*/}
+                <JobRole role={"Software Engineer"} date={"April 2022 - July 2024"} summary={JuniorRoleSummary}/>
+
+                {/*Intern Role*/}
+                <JobRole role={"Software Engineer Intern"} date={"October 2021 - April 2022"} summary={InternRoleSummary}/>
             </ol>
+            <div className="mt-3 text-sm text-slate-500 bg-slate-100 p-2 rounded-lg">
+                <p className="px-2"><span className="font-medium">Phew 😮‍💨</span> that was a lot! Just a glimpse into the exciting journey so far — there’s always more to learn and build!</p>
+            </div>
         </Card>
     </div>
 }
