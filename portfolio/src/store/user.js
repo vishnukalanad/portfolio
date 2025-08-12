@@ -30,9 +30,6 @@ const userSlice = createSlice({
             state.modalOpen = true;
             state.modalType = MODAL_TYPES.PROJECT;
         },
-        closeProjectData: (state) => {
-            state.projectData = null;
-        }
     }
 })
 

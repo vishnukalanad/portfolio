@@ -15,7 +15,7 @@ export default function Modal({children}) {
                 <div className="bg-white">
                     {children}
                 </div>
-                <div className="w-full flex justify-end pb-4">
+                <div className="w-full flex justify-end mt-2 pb-2">
                     <Button hover="hover:bg-red-200 hover:text-red-900" onClick={closeModal} text={"Close"}>
                         <BsFillXCircleFill />
                     </Button>
