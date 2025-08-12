@@ -6,6 +6,7 @@ import {useSelector} from "react-redux";
 import Modal from "./components/Modal.jsx";
 import ProjectDetailsModalLayout from "./components/ProjectDetailsModalLayout.jsx";
 import {MODAL_TYPES} from "./store/user.js";
+import Skills from "./components/Skills.jsx";
 
 function App() {
     const modalOpen = useSelector(state => state.user.modalOpen)
@@ -24,6 +25,7 @@ function App() {
             <div className="container w-[95%] lg:w-1/2 mx-auto">
                 <Navbar/>
                 <Flyer/>
+                <Skills />
                 <Projects/>
             </div>
         </main>

@@ -1,5 +1,8 @@
 import {useDispatch} from "react-redux";
 import {userActions} from "../store/user.js";
+import Button from "./Button.jsx";
+import { BsFillXCircleFill } from "react-icons/bs";
+
 
 export default function Modal({children}) {
     const dispatch = useDispatch();
@@ -13,7 +16,9 @@ export default function Modal({children}) {
                     {children}
                 </div>
                 <div className="w-full flex justify-end">
-                    <button className="" onClick={closeModal}>Close</button>
+                    <Button hover="hover:bg-red-200 hover:text-red-900" onClick={closeModal} text={"Close"}>
+                        <BsFillXCircleFill />
+                    </Button>
                 </div>
             </div>
         </dialog>
