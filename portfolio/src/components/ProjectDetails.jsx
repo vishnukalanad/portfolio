@@ -14,23 +14,13 @@ export default function ({title, description, clients, stack, keyPoints, complet
         }}>
             <span className="text-xs rounded-full bg-yellow-800/25 px-3 py-0.5 font-medium">Project {index + 1}</span>
             <p className="font-medium text-yellow-900 hover:text-yellow-700 hover:underline flex items-center gap-2">{title} <BsArrowUpRightCircleFill className="text-yellow-900 text-xs"/></p>
-            {/*<span className="align-super">*/}
-            {/*    <BsArrowUpRightCircleFill className="text-yellow-900"/>*/}
-            {/*</span>*/}
         </div>
         <div className="bg-slate-100 p-2 rounded-lg mt-2 md:mt-3">
-            <p className="text-sm text-slate-800">{description}</p>
+            <p className="text-sm text-slate-600 font-normal">{description}</p>
         </div>
-        {/*<div className="flex gap-2 items-center justify-center mt-2 p-0 rounded-full md:justify-end md:mt-3">*/}
-        {/*    <Button textColor="text-emerald-700" bg="bg-white" p="p-0" onClick={() => {*/}
-        {/*        openDetails(complete)*/}
-        {/*    }} text={"Learn More"} hover=" hover:text-emerald-900">*/}
-        {/*        <BsEyeFill/>*/}
-        {/*    </Button>*/}
-        {/*</div>*/}
         <div className="text-xs flex flex-col text-center gap-2 mt-3 md:flex-row">
             {stack.map((item, index) => {
-                return <span className="px-2 py-1 bg-blue-100 rounded-full text-blue-800 font-medium"
+                return <span className="px-2 py-1 bg-slate-100 rounded-full text-slate-800 font-medium"
                              key={item + index}>{item}</span>
             })}
         </div>

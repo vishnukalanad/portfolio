@@ -11,6 +11,7 @@ import GitLogo from "../assets/skills/git-svgrepo-com.svg"
 import PostmanLogo from "../assets/skills/postman-icon-svgrepo-com.svg"
 import GolangLogo from "../assets/skills/go-svgrepo-com.svg"
 import AngularLogo from "../assets/skills/angular-svgrepo-com.svg"
+import FigmaLogo from "../assets/skills/figma-svgrepo-com.svg"
 import DatabaseLogo from "../assets/skills/database-svgrepo-com.svg"
 import Card from "./Card.jsx";
 
@@ -40,21 +41,23 @@ const SKILLS = [{
     name: "Git", logo: GitLogo, proficiency: 90
 }, {
     name: "Postman", logo: PostmanLogo, proficiency: 95
+}, {
+    name: "Figma", logo: FigmaLogo, proficiency: 90
 }]
 
 export default function Skills() {
     return <div className="container mx-auto px-4 pt-4 w-full flex justify-between">
         <Card>
-            <div className="p-3">
-                <p className="text-emerald-800 font-medium">Skills</p>
+            <div className="p-2 ">
+                <p className="text-emerald-800 font-medium transition-transform duration-200 animate-pop">Skills</p>
                 <div>
-                    <p className="text-sm text-slate-600 mt-2">
+                    <p className="text-sm text-slate-600 mt-2 ">
                         I have a strong background in software development and have worked with a variety of
                         technologies.
                     </p>
                 </div>
 
-                <div className="mt-3">
+                <div className="mt-3 transition-transform duration-200 animate-pop">
                     <table className="w-full text-sm text-left rtl:text-right text-gray-500 ">
                         <thead className="text-xs text-gray-700 uppercase bg-gray-50 font-medium">
                         <tr>
@@ -68,7 +71,7 @@ export default function Skills() {
                         </thead>
                         <tbody className="text-sm">
                         {SKILLS.map(skill => {
-                            return <tr className="border-b border-gray-100 hover:bg-gray-50"
+                            return <tr className="border-b border-gray-100 hover:bg-gray-50 cursor-pointer"
                                        key={skill.name + Math.random() + "x"}>
                                 <td className="px-6 py-1">
                                     <div className="flex items-center gap-2">
@@ -88,7 +91,7 @@ export default function Skills() {
                         </tbody>
                     </table>
 
-                    <div className="mt-3 text-sm text-slate-500 bg-slate-100 p-2 rounded-lg">
+                    <div className="mt-3 text-sm text-slate-500 bg-slate-100 p-2 rounded-lg transition-transform duration-200 animate-pop">
                         <p className="italic text-center">"Live as if you were to die tomorrow. Learn as if you were to live forever.” <br /><span className="font-medium">— Mahatma Gandhi</span></p>
                         <hr className="my-3 border-slate-200" />
                         <p className="mt-2 indent-8">This reflects my belief that no skill is ever truly “finished” — technology evolves, and so do I.

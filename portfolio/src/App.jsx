@@ -7,11 +7,13 @@ import Modal from "./components/Modal.jsx";
 import ProjectDetailsModalLayout from "./components/ProjectDetailsModalLayout.jsx";
 import {MODAL_TYPES} from "./store/user.js";
 import Skills from "./components/Skills.jsx";
+import GsapScrollLine from "./components/GsapScrollLine.jsx";
+import GithubProjects from "./components/GithubProjects.jsx";
 
 function App() {
     const modalOpen = useSelector(state => state.user.modalOpen)
     const modalType = useSelector(state => state.user.modalType)
-    const modalData = useSelector(state => state.user.modalData)
+
     return (
         <main className="min-h-screen
     relative
@@ -22,11 +24,14 @@ function App() {
                 {modalType === MODAL_TYPES.PROJECT && <ProjectDetailsModalLayout/>}
                 {modalType === MODAL_TYPES.INFORMATION && <div>Other modal</div>}
             </Modal>}
+
             <div className="container w-[95%] lg:w-1/2 mx-auto">
+
                 <Navbar/>
                 <Flyer/>
                 <Skills />
                 <Projects/>
+                <GithubProjects/>
             </div>
         </main>
     )

@@ -34,3 +34,49 @@ body {
     scrollbar-width: none;     /* Firefox */
   }
 }
+
+@layer utilities {
+  @keyframes popIn {
+    0% {
+      opacity: 0;
+      margin-bottom: -20px;
+    }
+    100% {
+      opacity: 1;
+      margin-bottom: 0;
+    }
+  }
+
+  .animate-pop {
+    animation: popIn 0.3s cubic-bezier(0.42, 0, 0.26, 0.98) forwards;
+  }
+}
+
+
+#svg-stage {
+  max-width: 600px;
+  overflow: visible;
+  margin-top: 60vh;
+}
+
+.ball {
+  fill: #fff;
+  visibility: hidden;
+}
+
+.line {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+text {
+  fill: #ffffff;
+  font-size: 15px;
+  visibility: hidden;
+}
+
+.theLine {
+  stroke: #ffffff;
+}
+
