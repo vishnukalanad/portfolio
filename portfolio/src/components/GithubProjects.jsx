@@ -4,7 +4,7 @@ import GithubProject from "./GithubProject.jsx";
 const PROJECTS = [
     {
         name: "Personal Portfolio",
-        repo: "https://github.com/vishnukalanad/portfolio",
+        repo: "https://github.com/vishnukalanad/portfolio/tree/main/portfolio",
         stack: ["react", "tailwind", "js", "redux", "html", "css"],
         live: true
     },
@@ -23,9 +23,9 @@ const PROJECTS = [
 ]
 
 export default function GithubProjects() {
-    return <div className="container mx-auto px-4 p-3 w-full flex justify-between">
-        <Card flex="_">
-            <div className="p-2">
+    return <div className="container mx-auto px-4 pt-4 w-full flex justify-between">
+        <Card p={"p-3 px-4"} flex="_">
+            <div className="">
                 <p className="text-emerald-800 transition-transform duration-200 animate-pop">
                     <span>Github Projects</span></p>
                 <div className="grid grid-cols-1 gap-2 mt-3 md:grid-cols-2">
@@ -33,6 +33,9 @@ export default function GithubProjects() {
                         return <GithubProject key={project.name + Math.random() + "x"} project={project} />
                     })}
                 </div>
+            </div>
+            <div className="mt-3 text-sm text-slate-500 bg-slate-100 p-2 rounded-lg">
+                <p className="px-2">These may look simple, but don’t be fooled — critical skills are at the core, and there’s more cool stuff on the way!</p>
             </div>
         </Card>
     </div>

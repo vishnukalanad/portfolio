@@ -9,6 +9,7 @@ import {MODAL_TYPES} from "./store/user.js";
 import Skills from "./components/Skills.jsx";
 import GsapScrollLine from "./components/GsapScrollLine.jsx";
 import GithubProjects from "./components/GithubProjects.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
     const modalOpen = useSelector(state => state.user.modalOpen)
@@ -32,6 +33,7 @@ function App() {
                 <Skills />
                 <Projects/>
                 <GithubProjects/>
+                <Footer/>
             </div>
         </main>
     )

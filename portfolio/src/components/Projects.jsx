@@ -8,7 +8,7 @@ export default function Projects() {
     return<div className="container mx-auto px-4 pt-4 w-full flex justify-between">
         <Card p={"p-3 px-4"} flex="_">
             <p className="text-emerald-800 font-medium">Professional Summary</p>
-            <ol className="relative md:border-s-2 md:border-slate-200 mt-3 md:m-3">
+            <ol className="relative md:border-s-2 md:border-slate-200 md:border-dashed mt-3 md:m-3">
                 {/*Senior role*/}
                 <JobRole role={"Senior Software Engineer"} date={"July 2024 - August 2025"} summary={SeniorRoleSummary}/>
 
