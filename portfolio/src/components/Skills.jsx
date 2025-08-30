@@ -14,6 +14,8 @@ import AngularLogo from "../assets/skills/angular-svgrepo-com.svg"
 import FigmaLogo from "../assets/skills/figma-svgrepo-com.svg"
 import DatabaseLogo from "../assets/skills/database-svgrepo-com.svg"
 import Card from "./Card.jsx";
+import GsapLogo from "../assets/skills/gsap-logo.svg";
+
 
 const SKILLS = [{
     name: "Angular", logo: AngularLogo, proficiency: 95
@@ -27,6 +29,8 @@ const SKILLS = [{
     name: "Redux", logo: ReduxLogo, proficiency: 90
 }, {
     name: "Tailwind", logo: TailwindLogo, proficiency: 95
+},{
+    name: "GSAP", logo: GsapLogo, proficiency: 95
 }, {
     name: "HTML", logo: HTMLLogo, proficiency: 95
 }, {
@@ -35,6 +39,8 @@ const SKILLS = [{
     name: "Sass", logo: SassLogo, proficiency: 95
 }, {
     name: "Golang", logo: GolangLogo, proficiency: 80
+},{
+    name: "Database (MSQL, Postgres)", logo: DatabaseLogo, proficiency: 80
 }, {
     name: "Docker", logo: DockerLogo, proficiency: 80
 }, {
@@ -43,7 +49,7 @@ const SKILLS = [{
     name: "Postman", logo: PostmanLogo, proficiency: 95
 }, {
     name: "Figma", logo: FigmaLogo, proficiency: 90
-}]
+}, ]
 
 export default function Skills() {
     return <div className="container mx-auto px-4 pt-4 w-full flex justify-between">

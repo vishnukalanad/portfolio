@@ -8,6 +8,7 @@ import GolangLogo from "../assets/skills/go-svgrepo-com.svg";
 import HTMLLogo from "../assets/skills/html-5-svgrepo-com.svg";
 import CSSLogo from "../assets/skills/css-3-svgrepo-com.svg";
 import DatabaseLogo from "../assets/skills/database-svgrepo-com.svg";
+import GsapLogo from "../assets/skills/gsap-logo.svg";
 
 const STACKS = {
     react: {
@@ -41,6 +42,10 @@ const STACKS = {
         logo: DatabaseLogo,
         title: "Database",
     },
+    gsap: {
+        logo: GsapLogo,
+        title: "GSAP",
+    },
 }
 
 
@@ -66,7 +71,7 @@ export default function GithubProject({ project }) {
                 <p className="text-sm">{project.name}</p>
                 <div className="flex flex-wrap ml-1">
                     {project.stack.map(stack => {
-                        return <div className="h-5 w-5 p-1 bg-white ring-1 ring-slate-100 rounded-full -ml-1 my-1" key={stack + Math.random() + "x"}>
+                        return <div className="h-5 w-5 p-1 bg-white ring-1 ring-slate-100 rounded-full -ml-1 my-1 flex" key={stack + Math.random() + "x"}>
                             <img src={STACKS[stack].logo} alt="logo" title={STACKS[stack].title} />
                         </div>
                     })}

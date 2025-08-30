@@ -3,6 +3,12 @@ import GithubProject from "./GithubProject.jsx";
 
 const PROJECTS = [
     {
+        name: "Zentry Clone",
+        repo: "https://react-animated-one.vercel.app/",
+        stack: ["react", "tailwind", "js", "redux", "html", "css", "gsap"],
+        live: true
+    },
+    {
         name: "Personal Portfolio",
         repo: "https://github.com/vishnukalanad/portfolio/tree/main/portfolio",
         stack: ["react", "tailwind", "js", "redux", "html", "css"],
