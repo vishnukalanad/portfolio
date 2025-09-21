@@ -18,7 +18,7 @@ function App() {
     return (
         <main className="min-h-screen
     relative
-    bg-black">
+    bg-white">
             {modalOpen && <Modal>
                 {modalType === MODAL_TYPES.PROJECT && <ProjectDetailsModalLayout/>}
                 {modalType === MODAL_TYPES.INFORMATION && <div>Other modal</div>}
@@ -26,7 +26,7 @@ function App() {
 
             <div className="container w-[95%] lg:w-1/2 mx-auto">
 
-                <Navbar/>
+                {/*<Navbar/>*/}
                 <Flyer/>
                 <Skills />
                 <Projects/>
