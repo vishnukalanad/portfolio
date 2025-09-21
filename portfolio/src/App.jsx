@@ -18,9 +18,7 @@ function App() {
     return (
         <main className="min-h-screen
     relative
-    bg-slate-200
-    bg-[radial-gradient(circle,#d2d9df_1px,transparent_1px)]
-    bg-[length:16px_16px] ">
+    bg-black">
             {modalOpen && <Modal>
                 {modalType === MODAL_TYPES.PROJECT && <ProjectDetailsModalLayout/>}
                 {modalType === MODAL_TYPES.INFORMATION && <div>Other modal</div>}
