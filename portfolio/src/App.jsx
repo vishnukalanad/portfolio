@@ -10,6 +10,7 @@ import Skills from "./components/Skills.jsx";
 import { Analytics } from "@vercel/analytics/react"
 import GithubProjects from "./components/GithubProjects.jsx";
 import Footer from "./components/Footer.jsx";
+import Education from "./components/Education.jsx";
 
 function App() {
     const modalOpen = useSelector(state => state.user.modalOpen)
@@ -28,6 +29,7 @@ function App() {
 
                 {/*<Navbar/>*/}
                 <Flyer/>
+                <Education />
                 <Skills />
                 <Projects />
                 <GithubProjects/>
