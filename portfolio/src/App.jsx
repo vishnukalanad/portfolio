@@ -18,7 +18,7 @@ function App() {
     return (
         <main className="min-h-screen
     relative
-    bg-white">
+    bg-white ">
             {modalOpen && <Modal>
                 {modalType === MODAL_TYPES.PROJECT && <ProjectDetailsModalLayout/>}
                 {modalType === MODAL_TYPES.INFORMATION && <div>Other modal</div>}
@@ -29,8 +29,9 @@ function App() {
                 {/*<Navbar/>*/}
                 <Flyer/>
                 <Skills />
-                <Projects/>
+                <Projects />
                 <GithubProjects/>
+                {/*<div className={"h-dvh"}></div>*/}
                 <Footer/>
             </div>
             <Analytics />

@@ -6,6 +6,9 @@ import DataCard from "./DataCard.jsx";
 import Button from "./Button.jsx";
 import {BsArrowDownCircleFill, BsGithub, BsLinkedin} from "react-icons/bs";
 import {useState} from "react";
+import {useGSAP} from "@gsap/react";
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/all";
 
 export default function Flyer() {
     const [notify, setNotifier] = useState(false);
@@ -42,8 +45,27 @@ export default function Flyer() {
         if (newWindow) newWindow.opener = null;
     }
 
+    useGSAP(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.fromTo("#flyer", {
+            scale: 1.1,
+            opacity: 0
+        }, {
+            scale: 1,
+            opacity: 1,
+            ease: "power3.inOut",
+            scrollTrigger: {
+                trigger: "#flyer",
+                start: "top center",
+                end: "bottom bottom"
+            }
+        }
+        )
+    })
+
     const greetMe = personalDetails.greet();
-    return <div className="container mx-auto px-4 pt-4 w-full flex justify-between">
+    return <div className="container mx-auto px-2 pt-4 w-full h-dvh flex justify-between items-center" id={"flyer"}>
         <Card flex="_" bg={"bg-white"}>
             <div className="flex flex-col items-center gap-3 p-3 md:flex-row md:text-left">
                 {/*<img src={profilePic} alt="profile pic" className="w-48 h-48 rounded-full"/>*/}
@@ -55,7 +77,7 @@ export default function Flyer() {
                     </p>
                 </div>
             </div>
-            <div className="p-3 w-full flex flex-row gap-3">
+            <div className="p-2 w-full flex flex-row gap-3">
                 <Button
                     className={`transition-all duration-200 ${notify ? 'opacity-0 scale-75' : 'opacity-100 scale-100'}`}
                     hover="hover:bg-emerald-200 hover:text-emerald-900" text={"Download CV"} onClick={handleCvDownload}>
@@ -72,9 +94,11 @@ export default function Flyer() {
                         }}> <BsLinkedin className="lg"/></Button>
             </div>
             <hr className="my-3 border-slate-200" />
-            <div className="flex flex-col gap-2 p-3">
-                <p className="text-slate-600 text-xl">About Me</p>
-                <p className="text-slate-500 text-base">
+            <div className="flex flex-col gap-2 p-2">
+                <p className="text-slate-800 text-2xl font-semibold">About Me</p>
+                <p className="text-slate-600 text-base">
+                    My journey with software development began back in 2017 during my college years, when I was curious about how the web really worked. That curiosity led me to explore the fundamentals of coding, experiment with small projects, and dive deep into the evolving world of frontend development. Over time, this passion grew into a professional path where I’ve learned to adapt to modern frameworks, embrace best practices, and build applications that balance clean architecture with great user experiences.
+                    <br /><br />
                     Proven track record
                     in leading enterprise projects, including a CBDC support portal for major banks. Skilled in integrating REST APIs, streamlining workflows, and
                     driving efficiency improvements.
