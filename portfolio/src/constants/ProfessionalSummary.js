@@ -11,7 +11,8 @@ export const SeniorRoleSummary = [
             "Collaborated closely with multiple banking stakeholders, conducted regular UAT sessions, and secured production sign-offs from all institutions, ensuring smooth rollout and adoption."
         ],
         clients: ["The Federal Bank of India", "Indian Bank", "Karnataka Bank"],
-        stack: ["Angular", "Golang", "Postgresql"]
+        stack: ["Angular", "Golang", "Postgresql"],
+        bg: "bg-blue-50"
     },
     {
         name: "BO&T (Biller Onboarding & Automation Testing)",
@@ -26,7 +27,9 @@ export const SeniorRoleSummary = [
             "Enabled banks to onboard and manage billers under their control with role-based access and approval workflows."
         ],
         clients: ["NPCI (National Payments Corporation of India)", "Various Banks"],
-        stack: ["Angular", "Material UI", "Bootstrap", "Docker", "Golang", "PostgreSQL"]
+        stack: ["Angular", "Material UI", "Bootstrap", "Docker", "Golang", "PostgreSQL"],
+        bg: "bg-yellow-50"
+
     }
 ]
 
@@ -45,7 +48,9 @@ export const JuniorRoleSummary = [
             "Successfully launched the platform in 2023, enabling operational use across multiple nodal offices."
         ],
         clients: ["The Federal Bank of India"],
-        stack: ["Angular", "Material UI", "Bootstrap"]
+        stack: ["Angular", "Material UI", "Bootstrap"],
+        bg: "bg-blue-50"
+
     },
     {
         name: "BO&T (Biller Onboarding & Automation Testing)",
@@ -58,7 +63,9 @@ export const JuniorRoleSummary = [
             "Packaged application builds as Docker containers for staging and internal testing environments."
         ],
         clients: ["NPCI (National Payments Corporation of India)", "Various Banks"],
-        stack: ["Angular", "Material UI", "Bootstrap", "Docker", "Golang", "PostgreSQL"]
+        stack: ["Angular", "Material UI", "Bootstrap", "Docker", "Golang", "PostgreSQL"],
+        bg: "bg-yellow-50"
+
     },
     {
         name: "NLP (Port Transaction Management Platform)",
@@ -73,7 +80,9 @@ export const JuniorRoleSummary = [
             "Successfully deployed the application to production in 2024, improving transaction oversight and operational efficiency."
         ],
         clients: ["The Federal Bank of India"],
-        stack: ["Angular", "Material UI", "Bootstrap", "Golang", "PostgreSQL"]
+        stack: ["Angular", "Material UI", "Bootstrap", "Golang", "PostgreSQL"],
+        bg: "bg-emerald-50"
+
     },
     {
         name: "eRupee Support Portal",
@@ -86,7 +95,9 @@ export const JuniorRoleSummary = [
             "Contributed to building a scalable foundation supporting deployment across diverse banking institutions."
         ],
         clients: ["The Federal Bank of India", "Indian Bank", "Karnataka Bank"],
-        stack: ["Angular 18^ (SSR)", "Figma", "PrimeNG", "Tailwind"]
+        stack: ["Angular 18^ (SSR)", "Figma", "PrimeNG", "Tailwind"],
+        bg: "bg-red-50"
+
     },
     {
         name: "AMS (Apartment Management System)",
@@ -99,7 +110,9 @@ export const JuniorRoleSummary = [
             "Enabled role-based access for different users including apartment admins, landlords, and bank personnel to ensure secure and segmented operations."
         ],
         clients: ["The Federal Bank of India", "Apartment Administrators", "Landlords"],
-        stack: ["Angular", "Material UI", "Bootstrap", "Docker"]
+        stack: ["Angular", "Material UI", "Bootstrap", "Docker"],
+        bg: "bg-purple-50"
+
     }
 
 ]
@@ -116,6 +129,8 @@ export const InternRoleSummary = [
             "Engaged with stakeholders to gather requirements and refine workflows during the development phase."
         ],
         clients: ["The Federal Bank of India"],
-        stack: ["Angular", "Material UI", "Bootstrap"]
+        stack: ["Angular", "Material UI", "Bootstrap"],
+        bg: "bg-blue-50"
+
     }
 ]
