@@ -1,6 +1,5 @@
-import {BsClockFill} from "react-icons/bs";
 import ProjectDetails from "./ProjectDetails.jsx";
-import {FaBriefcase} from "react-icons/fa6";
+import {FaAt, FaBriefcase} from "react-icons/fa6";
 
 export default function JobRole({role, date, summary}) {
     return <div className={"gap-2"} id={"jobTitleTrigger"}>
@@ -13,6 +12,8 @@ export default function JobRole({role, date, summary}) {
                 <p className={"text-sm font-medium text-black"}>{date}</p>
             </div>
         </div>
+        <p className={"text-sm mt-2 px-2 py-1 w-fit bg-slate-100 rounded-xl text-slate-500 flex items-center gap-1"}><span><FaAt /></span> <span className={"text-slate-700 font-semibold"}>Digiledge</span> by <span className={"font-semibold text-emerald-800"}>MintOak</span></p>
+
         <div className={"grid grid-cols-1 md:grid-cols-2 gap-2 mt-3"}>
             {
                 summary.map((project, index) => {
