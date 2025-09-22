@@ -65,14 +65,14 @@ export default function Flyer() {
     })
 
     const greetMe = personalDetails.greet();
-    return <div className="container mx-auto px-2 pt-4 w-full h-dvh flex justify-between items-center" id={"flyer"}>
+    return <div className="container mx-auto px-2 pt-4 w-full min-h-dvh flex justify-between items-center" id={"flyer"}>
         <Card flex="_" bg={"bg-white"}>
             <div className="flex flex-col items-center gap-3 p-3 md:flex-row md:text-left">
                 {/*<img src={profilePic} alt="profile pic" className="w-48 h-48 rounded-full"/>*/}
                 <div className="flex flex-col gap-2">
                     <p className="text-emerald-800 text-5xl font-medium">{greetMe}</p>
                     {/*<p className="text-slate-500 text-lg">from <span className={"font-semibold"}>{personalDetails.location}</span></p>*/}
-                    <p className="text-gray-500 text-base mt-2">
+                    <p className="text-gray-700 text-base mt-2">
                         Front-End Engineer with 4 years of experience designing and deploying scalable multi-tenant applications.
                     </p>
                 </div>
@@ -96,7 +96,7 @@ export default function Flyer() {
             <hr className="my-3 border-slate-200" />
             <div className="flex flex-col gap-2 p-2">
                 <p className="text-slate-800 text-2xl font-semibold">About Me</p>
-                <p className="text-slate-600 text-base">
+                <p className="text-slate-700 text-base">
                     My journey with software development began back in 2017 during my college years, when I was curious about how the web really worked. That curiosity led me to explore the fundamentals of coding, experiment with small projects, and dive deep into the evolving world of frontend development. Over time, this passion grew into a professional path where I’ve learned to adapt to modern frameworks, embrace best practices, and build applications that balance clean architecture with great user experiences.
                     <br /><br />
                     Proven track record

@@ -37,7 +37,8 @@ export default function GithubProjects() {
         <Card p={"p-3 px-4"} flex="_">
             <div className="">
                 <p className={"uppercase text-xs font-semibold text-gray-700"}>projects</p>
-                <p className="text-slate-800 transition-transform text-2xl font-semibold">Github Projects</p>
+                <p className="text-slate-800 transition-transform text-4xl font-semibold">Github Projects</p>
+                <p className={"text-lg text-slate-700"}>A collection of my practice and learning projects — exploring frontend with React and Tailwind, and backend with Go. These projects serve as hands-on references to sharpen my skills, experiment with new tools, and document my growth as a developer.</p>
                 <div className="grid grid-cols-1 gap-4 mt-3 md:grid-cols-1">
                     {PROJECTS.map(project => {
                         return <GithubProject key={project.name + Math.random() + "x"} project={project} />

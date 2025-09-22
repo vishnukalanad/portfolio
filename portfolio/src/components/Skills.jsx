@@ -105,8 +105,8 @@ export default function Skills() {
         <Card flex="_" id={"card"}>
             <div className={"flex flex-col gap-1 w-full p-2"}>
                 <p className={"uppercase text-xs font-semibold text-slate-700"}>skills</p>
-                <p className={"text-2xl text-slate-800 font-semibold"}>What are my skills?</p>
-                <p className={"text-base text-slate-500"}>I build clean, responsive, and user-friendly interfaces that
+                <p className={"text-4xl text-slate-800 font-semibold"}>What are my skills?</p>
+                <p className={"text-slate-700 text-lg"}>I build clean, responsive, and user-friendly interfaces that
                     streamline workflows and enhance user productivity.</p>
             </div>
             <div className={"grid grid-cols-1 gap-2 mt-3 md:grid-cols-6 p-2"}>

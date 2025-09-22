@@ -55,7 +55,7 @@ export default function Projects() {
                 <div className={"p-2 clip"}>
                     <div  id={"title"} >
                         <p className={"uppercase text-xs font-semibold text-gray-700"}>Experience</p>
-                        <p className={"text-2xl text-back font-semibold"}>The Journey That Shaped My Career</p>
+                        <p className={"text-4xl text-back font-semibold"}>The Journey That Shaped My Career</p>
                     </div>
                     <div className="flex flex-col gap-2 mt-3">
 
