@@ -9,6 +9,7 @@ import HTMLLogo from "../assets/skills/html-5-svgrepo-com.svg";
 import CSSLogo from "../assets/skills/css-3-svgrepo-com.svg";
 import DatabaseLogo from "../assets/skills/database-svgrepo-com.svg";
 import GsapLogo from "../assets/skills/gsap-logo.svg";
+import {FaArrowRight} from "react-icons/fa6";
 
 const STACKS = {
     react: {
@@ -90,6 +91,7 @@ export default function GithubProject({ project }) {
             {/*}} text={"Know more"} textColor={"text-emerald-800"} bg={"bg-slate-200"}>*/}
             {/*    <BsArrowUpRightCircleFill className="lg"/>*/}
             {/*</Button>*/}
+            <button className={"flex items-center gap-2 cursor-pointer mt-2 font-medium text-emerald-800"} onClick={() => openLinksWithNewTab(project.repo)}>Learn more <span><FaArrowRight /></span></button>
         </div>
     </div>
 }

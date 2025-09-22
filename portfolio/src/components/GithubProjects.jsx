@@ -36,7 +36,7 @@ export default function GithubProjects() {
     return <div className="container mx-auto px-4 pt-4 w-full min-h-dvh flex justify-between items-center">
         <Card p={"p-3 px-4"} flex="_">
             <div className="">
-                <p className={"uppercase text-xs font-semibold text-gray-700"}>peojects</p>
+                <p className={"uppercase text-xs font-semibold text-gray-700"}>projects</p>
                 <p className="text-slate-800 transition-transform text-2xl font-semibold">Github Projects</p>
                 <div className="grid grid-cols-1 gap-4 mt-3 md:grid-cols-1">
                     {PROJECTS.map(project => {
