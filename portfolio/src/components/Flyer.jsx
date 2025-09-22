@@ -60,20 +60,19 @@ export default function Flyer() {
                 start: "top center",
                 end: "bottom bottom"
             }
-        }
-        )
+        });
     })
 
     const greetMe = personalDetails.greet();
     return <div className="container mx-auto px-2 pt-4 w-full min-h-dvh flex justify-between items-center" id={"flyer"}>
-        <Card flex="_" bg={"bg-white"}>
+        <Card flex="_" bg={"bg-white"} className={"my-4 shadow-lg shadow-slate-200"}>
             <div className="flex flex-col items-center gap-3 p-3 md:flex-row md:text-left">
                 {/*<img src={profilePic} alt="profile pic" className="w-48 h-48 rounded-full"/>*/}
                 <div className="flex flex-col gap-2">
                     <p className="text-emerald-800 text-5xl font-medium">{greetMe}</p>
                     {/*<p className="text-slate-500 text-lg">from <span className={"font-semibold"}>{personalDetails.location}</span></p>*/}
                     <p className="text-gray-700 text-base mt-2">
-                        Front-End Engineer with 4 years of experience designing and deploying scalable multi-tenant applications.
+                        Front-End Software Engineer with 4 years of experience designing and developing scalable multi-tenant applications.
                     </p>
                 </div>
             </div>

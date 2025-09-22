@@ -12,47 +12,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Projects() {
 
-    useGSAP(() => {
-        gsap.registerPlugin(ScrollTrigger);
-
-        // gsap.fromTo("#experience", {
-        //     opacity: 0,
-        //     marginTop: -100,
-        // }, {
-        //     opacity: 1,
-        //     marginTop: 0,
-        //     ease: "none",
-        //     scrollTrigger: {
-        //         trigger: "#experience",
-        //         start: "top center",
-        //         end: "+=100 top",
-        //         scrub: true,
-        //     }
-        // });
-
-        // gsap.fromTo("#jobTitles", {
-        //     visibility: "none",
-        //     background: "none"
-        // }, {
-        //     visibility: "visible",
-        //     ease: "power2.inOut",
-        //     scrollTrigger: {
-        //         trigger: "#jobTitleTrigger",
-        //         start: "top center",
-        //         endTrigger: "#experience",
-        //         end: "+=100 top",
-        //         scrub: true,
-        //     }
-        // })
-    });
-
     return <div
         className="container mx-auto px-2 w-full flex justify-center min-h-dvh bg-none relative"
          id={"experience"}>
-        {/*<div className={"absolute top-0 w-full h-full bg-white"}></div>*/}
         <div className={"w-full h-1/2 z-10"}>
-            <Card flex="_" bg={"bg-none"}>
-                <div className={"p-2 clip"}>
+            <Card flex="_" bg={"bg-white"} className={"my-4 shadow-lg shadow-slate-200"}>
+                <div className={"p-2"}>
                     <div  id={"title"} >
                         <p className={"uppercase text-xs font-semibold text-gray-700"}>Experience</p>
                         <p className={"text-4xl text-back font-semibold"}>The Journey That Shaped My Career</p>

@@ -11,13 +11,15 @@ import { Analytics } from "@vercel/analytics/react"
 import GithubProjects from "./components/GithubProjects.jsx";
 import Footer from "./components/Footer.jsx";
 import Education from "./components/Education.jsx";
+import {useGSAP} from "@gsap/react";
+import {gsap} from "gsap";
 
 function App() {
     const modalOpen = useSelector(state => state.user.modalOpen)
     const modalType = useSelector(state => state.user.modalType)
 
     return (
-        <main className="min-h-screen
+        <main className="min-h-screen overflow-y-hidden
     relative
     bg-white ">
             {modalOpen && <Modal>
@@ -25,15 +27,31 @@ function App() {
                 {modalType === MODAL_TYPES.INFORMATION && <div>Other modal</div>}
             </Modal>}
 
-            <div className="container w-[95%] lg:w-1/2 mx-auto">
+            <div className={"bg-slate-100"}>
+                <div className="container w-[95%] lg:w-1/2 mx-auto">
+                    <Flyer/>
+                </div>
+            </div>
 
-                {/*<Navbar/>*/}
-                <Flyer/>
-                <Education />
-                <Skills />
-                <Projects />
+            <div className={"bg-slate-50"}>
+                <div className="container w-[95%] lg:w-1/2 mx-auto">
+                    <Education />
+                </div>
+            </div>
+            <div className={"bg-slate-100 py-20 my:py-0"}>
+                <div className="container w-[95%] lg:w-1/2 mx-auto">
+                    <Skills/>
+                </div>
+            </div>
+            <div className={"bg-slate-50 py-20"}>
+                <div className="container w-[95%] lg:w-1/2 mx-auto">
+                    <Projects />
+                </div>
+            </div>
+            <div className="container w-[95%] lg:w-1/2 mx-auto pt-20">
                 <GithubProjects/>
-                {/*<div className={"h-dvh"}></div>*/}
+            </div>
+            <div className="container w-[95%] lg:w-1/2 mx-auto">
                 <Footer/>
             </div>
             <Analytics />

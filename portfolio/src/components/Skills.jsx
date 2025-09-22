@@ -59,50 +59,26 @@ export default function Skills() {
     useGSAP(() => {
         gsap.registerPlugin(ScrollTrigger);
 
-        // gsap.fromTo(".skill", {
-        //         scale: 0,
-        //         opacity: 0,
-        //     }, {
-        //         scale: 1,
-        //         opacity: 1,
-        //         ease: "power3.inOut",
-        //         scrollTrigger: {
-        //             trigger: "#skills",
-        //             start: "top center",
-        //             end: "bottom bottom",
-        //             scrub: true,
-        //         }
-        //     }
-        // )
+        ScrollTrigger.matchMedia({
+            "(min-width: 768px)": () => {
+                gsap.fromTo("#skillsCard", {
+                    marginTop: -200,
+                }, {
+                    marginTop: 0,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: "#skills",
+                        start: "top center",
+                        end: "top top",
+                        scrub: true
+                    }
+                })
+            }
+        })
 
-        // gsap.fromTo("#card", {
-        //     // scale: 1.2,
-        //     opacity: 0
-        // }, {
-        //     // scale: 1,
-        //     opacity: 1,
-        //     ease: "power2.inOut",
-        //     scrollTrigger: {
-        //         trigger: "#skills", start: "top center",
-        //         end: "center center",
-        //         scrub: true,
-        //     }
-        // })
-        //
-        // gsap.to("#skills", {
-        //     opacity: 0,
-        //     ease: "power2.inOut",
-        //     scrollTrigger: {
-        //         trigger: "#skills",
-        //         start: "center 100",
-        //         endTrigger: "#experience",
-        //         end: "top center",
-        //         scrub: true,
-        //     }
-        // })
     })
     return <div className="container mx-auto px-2 w-full flex justify-between items-center min-h-dvh" id={"skills"}>
-        <Card flex="_" id={"card"}>
+        <Card flex="_" id={"skillsCard"} className={"my-4 shadow-lg shadow-slate-200"}>
             <div className={"flex flex-col gap-1 w-full p-2"}>
                 <p className={"uppercase text-xs font-semibold text-slate-700"}>skills</p>
                 <p className={"text-4xl text-slate-800 font-semibold"}>What are my skills?</p>
