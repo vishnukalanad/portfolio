@@ -9,6 +9,7 @@ import HTMLLogo from "../assets/skills/html-5-svgrepo-com.svg";
 import CSSLogo from "../assets/skills/css-3-svgrepo-com.svg";
 import DatabaseLogo from "../assets/skills/database-svgrepo-com.svg";
 import GsapLogo from "../assets/skills/gsap-logo.svg";
+import NgRxLogo from "../assets/skills/ngrx-logo.svg";
 import {FaArrowRight} from "react-icons/fa6";
 
 const STACKS = {
@@ -28,6 +29,10 @@ const STACKS = {
         logo: ReduxLogo,
         title: "Redux",
     },
+    ngrx: {
+        logo: NgRxLogo,
+        title: "NgRx",
+    },
     golang: {
         logo: GolangLogo,
         title: "Golang",
@@ -38,6 +43,7 @@ const STACKS = {
     },
     css: {
         logo: CSSLogo,
+        title: "CSS",
     },
     psql: {
         logo: DatabaseLogo,
