@@ -13,6 +13,7 @@ import GolangLogo from "../assets/skills/go-svgrepo-com.svg"
 import AngularLogo from "../assets/skills/angular-svgrepo-com.svg"
 import FigmaLogo from "../assets/skills/figma-svgrepo-com.svg"
 import DatabaseLogo from "../assets/skills/database-svgrepo-com.svg"
+import NgrxLogo from "../assets/skills/ngrx-logo.svg"
 import Card from "./Card.jsx";
 import GsapLogo from "../assets/skills/gsap-logo.svg";
 import SkillIndividual from "./SkillIndividual.jsx";
@@ -30,6 +31,8 @@ const SKILLS = [{
 }, {
     name: "TypeScript", logo: TypeScriptLogo, proficiency: 95
 }, {
+    name: "NgRx", logo: NgrxLogo, proficiency: 90
+},{
     name: "Redux", logo: ReduxLogo, proficiency: 90
 }, {
     name: "Tailwind", logo: TailwindLogo, proficiency: 95

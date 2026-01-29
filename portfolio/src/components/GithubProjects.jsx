@@ -3,6 +3,13 @@ import GithubProject from "./GithubProject.jsx";
 
 const PROJECTS = [
     {
+        name: "Weather App",
+        repo: "https://outsidenow.vercel.app/",
+        desc: "A simple weather application built with Angular, NgRx for state management, and Tailwind CSS for a clean, responsive UI.",
+        stack: ["angular", "tailwind", "ts", "ngrx", "html", "css"],
+        live: true
+    },
+    {
         name: "Zentry Clone",
         repo: "https://react-animated-one.vercel.app/",
         desc: "Zentry clone built with React and Tailwind CSS, enhanced with GSAP animations for smooth, interactive transitions. This project replicates a real-world site design while focusing on responsive layouts, component reusability, and performance.",
