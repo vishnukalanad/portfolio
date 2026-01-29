@@ -6,7 +6,7 @@ const PROJECTS = [
         name: "Weather App",
         repo: "https://outsidenow.vercel.app/",
         desc: "A simple weather application built with Angular, NgRx for state management, and Tailwind CSS for a clean, responsive UI.",
-        stack: ["angular", "tailwind", "ts", "ngrx", "html", "css"],
+        stack: ["angular", "tailwind", "ts", "ngrx"],
         live: true
     },
     {
