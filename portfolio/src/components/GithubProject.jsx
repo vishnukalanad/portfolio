@@ -10,12 +10,18 @@ import CSSLogo from "../assets/skills/css-3-svgrepo-com.svg";
 import DatabaseLogo from "../assets/skills/database-svgrepo-com.svg";
 import GsapLogo from "../assets/skills/gsap-logo.svg";
 import NgRxLogo from "../assets/skills/ngrx-logo.svg";
+import TSLogo from "../assets/skills//typescript-icon-svgrepo-com.svg";
+import AngularLogo from "../assets/skills/angular-svgrepo-com.svg";
 import {FaArrowRight} from "react-icons/fa6";
 
 const STACKS = {
     react: {
         logo: ReactLogo,
         title: "React",
+    },
+    angular: {
+        logo: AngularLogo,
+        title: "Angular",
     },
     tailwind: {
         logo: TailwindLogo,
@@ -24,6 +30,10 @@ const STACKS = {
     js: {
         logo: JSLogo,
         title: "JavaScript",
+    },
+    ts: {
+        logo: TSLogo,
+        title: "TypeScript",
     },
     redux: {
         logo: ReduxLogo,
@@ -61,6 +71,7 @@ export default function GithubProject({ project }) {
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
         if (newWindow) newWindow.opener = null;
     }
+
     return<div className="bg-slate-100 p-4 rounded-2xl" key={project.name}>
         <div>
             <div className={"flex items-start justify-between gap-2"}>
