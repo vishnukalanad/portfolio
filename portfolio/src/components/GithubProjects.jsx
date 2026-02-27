@@ -2,6 +2,7 @@ import Card from "./Card.jsx";
 import GithubProject from "./GithubProject.jsx";
 
 const PROJECTS = [
+    // projects
     {
         name: "Eniyo. Kanban Board",
         repo: "https://eniyo.vercel.app/",
