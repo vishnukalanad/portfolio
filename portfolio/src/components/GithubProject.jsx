@@ -53,8 +53,7 @@ const STACKS = {
     },
     css: {
         logo: CSSLogo,
-
-
+        title: "CSS",
     },
     psql: {
         logo: DatabaseLogo,

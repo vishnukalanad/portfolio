@@ -3,6 +3,13 @@ import GithubProject from "./GithubProject.jsx";
 
 const PROJECTS = [
     {
+        name: "Eniyo. Kanban Board",
+        repo: "https://eniyo.vercel.app/",
+        desc: "(Development in progress) A modern Kanban board built with Angular and NgRx, featuring drag-and-drop task management, real-time state updates, and a clean responsive UI powered by Tailwind CSS.",
+        stack: ["angular", "tailwind", "ts", "ngrx"],
+        live: true
+    },
+    {
         name: "Weather App",
         repo: "https://outsidenow.vercel.app/",
         desc: "A simple weather application built with Angular, NgRx for state management, and Tailwind CSS for a clean, responsive UI.",
